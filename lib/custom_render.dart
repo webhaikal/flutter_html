@@ -101,7 +101,7 @@ class CustomRender {
 }
 
 class SelectableCustomRender extends CustomRender {
-  final TextSpan Function(RenderContext, List<TextSpan> Function()) textSpan;
+  final TextSpan Function(RenderContext, List<InlineSpan> Function()) textSpan;
 
   SelectableCustomRender.fromTextSpan({
     required this.textSpan,
