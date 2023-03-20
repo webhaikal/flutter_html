@@ -102,7 +102,7 @@ class CssBoxWidget extends StatelessWidget {
       textDirection: style.direction,
       maxLines: style.maxLines,
       overflow: style.textOverflow ?? TextOverflow.clip,
-      selectionColor: const Color.fromRGBO(255, 0, 128, 1),
+      selectionColor: const Color.fromRGBO(255, 0, 128, 0.2),
     );
   }
 
