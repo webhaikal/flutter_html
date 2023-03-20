@@ -93,8 +93,8 @@ class CssBoxWidget extends StatelessWidget {
       }
     }
 
-    return RichText(
-      text: TextSpan(
+    return Text.rich(
+      TextSpan(
         style: style.generateTextStyle(),
         children: children,
       ),
@@ -102,8 +102,7 @@ class CssBoxWidget extends StatelessWidget {
       textDirection: style.direction,
       maxLines: style.maxLines,
       overflow: style.textOverflow ?? TextOverflow.clip,
-      selectionRegistrar: SelectionContainer.maybeOf(context),
-      selectionColor: Color.fromRGBO(255, 0, 128, 1),
+      selectionColor: const Color.fromRGBO(255, 0, 128, 1),
     );
   }
 
