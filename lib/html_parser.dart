@@ -95,6 +95,7 @@ class HtmlParser extends StatelessWidget {
       style: processedTree.style,
       children: [parsedTree],
       shrinkWrap: shrinkWrap,
+      context: context,
     );
   }
 
